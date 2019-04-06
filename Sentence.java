@@ -54,7 +54,15 @@ public class Sentence
         {
             start = getRandWord(singularPronouns);
             verb = getRandWord(pluralVerbs);
+            noun = getRandWord(nouns);
         }
+        else if (singularStart == 1 && startNoun == 1)
+        {
+            start = getRandWord(nouns);
+            verb = getRandWord(pluarlVerbs);
+            noun = getRandWord(nouns);
+        }
+        else if (singul)
         return (start + " " + verb + " " + noun + ".");
     }
 
